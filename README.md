@@ -24,8 +24,14 @@ Set the Merchant Account Type & Number
 - setPaymentID(LibPromptpay::PROMPTPAY_ACCTYPE_EWALLET, 'XXXXXXXXXXXXXXX');
 
 ### setAmount($amount)
-Set the preferred amount for receiving the payment ** WARNING ** K Plus Application does not support amount in QR code
+Set the preferred amount for receiving the payment ** WARNING ** K Plus Application does not support amount in QR code (see below).
 - setAmount(2999.31)
+
+### setBillPayment($accid, $invoiceid, $amount)
+*EXPERIMENTAL* Set the bill payment information. Will force set amount & QRType to Dynamic
+
+### setBillPaymentRef3($ref3)
+*EXPERIMENTAL* Set the bill payment reference code 3 field.
 
 # Thai QR Payment Limitation
 
@@ -39,3 +45,4 @@ Set the preferred amount for receiving the payment ** WARNING ** K Plus Applicat
 - CRC16 CCITT from [jkobus/crc16-ccit](https://github.com/jkobus/crc16-ccit)
 - Original work from [ifew/PromptpayQR](https://github.com/ifew/PromptpayQR)
 - [EMVCo QR Code Specification](https://www.emvco.com/emv-technologies/qrcodes/)
+- Blognone [Thai QR for Bill payment information](https://www.blognone.com/node/98335)
