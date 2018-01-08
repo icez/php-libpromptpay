@@ -30,10 +30,10 @@ Set the preferred amount for receiving the payment ** WARNING ** K Plus Applicat
 # Thai QR Payment Limitation
 
 ### K Plus Application
-- Does not recognize 'Amount' field
+- [2018-01-08] Does not recognize 'Amount' field
 
 ### SCBEasy Applcation
-- Does not allow amount less than 1 THB
+- [2018-01-08] Does not allow amount less than 1 THB
 
 # Credit
 - CRC16 CCITT from [jkobus/crc16-ccit](https://github.com/jkobus/crc16-ccit)
